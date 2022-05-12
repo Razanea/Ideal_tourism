@@ -1,0 +1,178 @@
+body{
+    background-color: #F0FFF0;
+    font-family: 'Brush Script MT', cursive;  
+    }
+    
+
+ /*--------------------------About Riyadh page contents------------------------------------*/
+    .main_Contents{
+      background-image: url("Photos/Riyadh_Background.png");
+      background-size: 100%;
+      color: white;
+    }
+
+    .main_Contents h1{
+      font-size: 80px;
+      margin-left: 47%;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color:#F4F4F4;
+      text-shadow: 2px 2px black;
+    }
+
+    .main_Contents p{
+      font-size: 20px;
+      margin-left: 47%;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color:#557571;
+      background-color: rgba(0, 0, 0, 0.12);
+      padding: 12px;
+      margin-right: 30px;
+      border-radius: 5px;
+    }
+ 
+
+    .current_local_time{
+      background-color: rgba(255, 255, 255, 0.9);
+      float: left;
+      position: absolute;
+      top: 400px;
+      left: 70px;
+      padding: 4%;
+      border-radius: 5px;
+      width: 25%;
+      height: 12%;
+    }
+
+    .weather_image{
+      width: 56px;
+      position: absolute;
+      bottom: 50px;
+      left: 32px;
+    }
+
+    .current_local_time h2{
+      margin-left: 28px;
+      margin-bottom: 180px;
+      font-size: 18px;
+      color:#202020;
+    }
+    .today_weather h1{
+      position: absolute;
+      top: 70px;
+      right: 305px;
+      font-size: 16px;
+    }
+
+    .vertical_line{
+      border-left: 0.5px solid gray;
+      height: 100px;
+      float: left;
+      margin-top: -50px;
+      margin-left: 55px;
+    }
+
+    .clock{
+      width: 200px;
+      height: 150px;
+      position: absolute;
+      transform: translate(-10%,-50%);
+      top: 67%;
+      left: 41%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .clock div{
+      position: relative;
+      background-color: #ffffff;
+      height: 30%;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Open Sans',sans-serif;
+      font-size: 17px;
+      color: #202020;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+      letter-spacing: 3px;
+  }
+  .clock span{
+      font-weight: bolder;
+      font-size: 30px;
+      color: black;
+  }
+
+  .today_date{
+    position: absolute;
+    transform: translate(-10%,-50%);
+    top: 95%;
+    left: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .accordion_contents{
+      margin: 3%;
+      padding: 2%;
+  }
+
+  .accordion_contents h1{
+    color:#557571
+  }
+  .accordion_contents li{
+    color: #D49A89;
+  }
+  .accordion {
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #557571;
+    color: whitesmoke;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+iframe {
+   width: 98%; /* adjust to your needs */
+   height: 500px;
+   max-width: 100%; /* to make it responsive */
+}
+
+
+/*---------------------------------Riyadh season content ---------------*/
+.r_contents{
+      margin: 3%;
+      padding: 2%;
+  }
+
+  .r_contents h1{
+    color:#557571;
+  }
+
+  a{
+     color:#557571;
+  }
+  a:hover{
+    color: #F4F4F4;
+  }

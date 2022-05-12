@@ -1,0 +1,293 @@
+/* --------------------------Riyadh Offer STYLE--------------------------------*/
+.container {
+    position: relative;
+    width: 33.3333%;
+    float: left;
+}
+
+.w3-bold {
+   font-weight: bold;
+ }
+ 
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;  
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height : 300px; 
+}
+
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #557571;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+h1.title{ 
+text-align: center;
+font-family: 'Brush Script MT', cursive;
+color:#557571;
+font-weight: bold;
+}
+
+p.subTitle{
+text-align: center;
+font-family: 'Brush Script MT', cursive;
+word-spacing: 20px;
+}
+.homebtn {
+
+ background-color:#557571;
+ color: white;
+ top: 40px;
+}
+
+
+/* --------------------------SLIDESHOW ADVERTISING STYLE START--------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+/*Image Style*/
+.mySlides {
+  vertical-align: middle;
+  width: 1300px;
+  display: none; /* Hide the images by default */
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #F4F4F4;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #557571;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* --------------------------Visiting Riyadh--------------------------------*/
+
+header,main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card1 {
+  height: 300px;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  border: 4px solid #557571;
+  margin-bottom: 20px;
+  background-image: url("Photos/abouthome.jpeg");
+  background-size: cover;
+}
+
+
+.card2 {
+  height: 200px;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  border: 4px solid #557571;
+  margin-bottom: 20px;
+  background-image: url('Photos/recommendations1.jpg');
+  background-size: cover;
+}
+
+.inner {
+  height: 50%;
+  width: 300px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background: white;
+  box-sizing: border-box;
+  padding: 80px;
+  
+}
+
+.title2 {
+  font-size: 24px;
+  color: black;  
+  text-align: center;
+  font-weight: 700;
+  color: #557571;
+  text-shadow: 0px 2px 2px #F7D1BA;
+  position: relative;
+  margin: 0 0 20px 0;
+ 
+}
+
+.subtitle {
+  color: black;
+  text-align: center;
+  background-color:#557571;
+  color: white;
+  padding: 9px;
+}
+
+
+hr{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+ /*--------------------------Review Card& Form & recommndations------------------------------------*/
+
+  .w3-card-4{
+    width:20%;
+    float: left;
+    margin-top: 30px;
+    position: relative;
+  }
+  .reviewcard_height{
+    margin-left: 20px;
+    height: 430px;
+  }
+  .c1{
+   background-color:#557571;
+  }
+
+  img.w3-circle {
+    width:50px;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  .iconColor,.FormBtnColor{
+   color:  #33383b;
+  }
+
+ .FormiconStyle { /* the icon in the form style */
+    width:50px !important;
+  }
+
+  .ReviewFormTitle {
+   font-family: 'Brush Script MT', cursive;
+   color:#557571;
+  }
+
+  .formWidth {
+   width: 1000px !important; 
+   position: absolute;
+   left: 48%;
+   transform: translate(-49%, -49%);
+   display: none;
+  }
+
+ /*--------------------------Explore page------------------------------------*/
+
+
+image.w3-image{
+  width : 600;
+    height : 2000;
+}
+
+ .w3-bold {
+   font-weight: bold;
+ }
+.Explorebtn {
+  background-color: #557571;
+ }
+.ExploreHeader{
+max-width:1200px;
+}
+.ExploreNavbar{
+  bottom:-16px !important;
+}
+
+.linkPlace{
+   position: relative;
+   top: 60px;
+    left: 83%; 
+   color: #557571;
+}
+
+

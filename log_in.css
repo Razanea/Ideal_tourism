@@ -1,0 +1,35 @@
+/*---------------------------log in window style---------------------------*/
+  .login_card{
+    max-width: 600px;
+    position: absolute;
+    right: 40%;
+    border-radius: 2px;
+  }
+
+  .login_title{
+    font-family:'Cookie', cursive ;
+    font-size: 40px;
+    color:#D49A89
+  }
+
+  .avatar{
+    width: 30%;
+  }
+
+  .login_button{
+    background-color: #557571;
+    border-radius: 4px;
+  }
+
+  .exit_button{
+    border-radius: 2px;
+  }
+
+  #text_color{
+    color: #D49A89;
+  }
+  
+  .link_color{
+   color:dodgerblue;
+  }
+  

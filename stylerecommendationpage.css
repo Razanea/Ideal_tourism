@@ -1,0 +1,63 @@
+.peopleRecom{
+    max-width:1400px;
+    margin-top:80px;
+    position: relative;
+}
+
+.Ravatar{
+    height:40px;
+    width:40px;
+}
+.recomendationCard{
+    display: block;
+    margin-left: 20px;
+    height: 640px;
+    margin-top: 10%;
+  }
+
+
+   .spacebetweencards{
+       margin-right: 5%;
+   }
+  
+  .location{
+       float: right;
+       margin-right: 20px;
+       text-decoration: none;
+   }
+      .location:hover {
+    color: #D49A89;
+  }
+
+    .CardSpace{
+     margin-left: 30px;
+    }
+   
+   h1{
+     font-family: 'Brush Script MT', cursive; 
+   }
+   .img2 {
+       width:  290px;
+       height: 220px;
+       object-fit: cover;
+   }
+   .ExploreNavbar{
+     bottom:-40px;
+   }
+   .Explorebtn {
+     background-color: #557571;
+    }
+   
+    .rec_title{
+        margin-left: 15px;
+        padding-bottom: 5px;
+    }
+
+.content{
+
+       max-width:1600px;
+       margin-top:80px;
+   
+}
+   
+   

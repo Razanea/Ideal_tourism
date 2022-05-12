@@ -1,0 +1,128 @@
+
+.homebtn{
+    background-color:#557571;
+    color: white;
+    position: relative;
+    margin-top: 25px;
+   }
+   
+   /*---------- Page Container ----------------------------------------*/
+   
+   .AdminPageContent{
+       max-width:1600px;
+       margin-top:80px;
+   }
+   .avarat1Size{
+       height:90px;
+       width:116px;
+   }
+   .card2{
+   Background-color:#557571 !important;
+   width:30%;
+   padding: 30px;
+   }
+   
+   .spanStyle{
+   font-size: 12px;
+   }
+   .favCard1{
+    width: 100%;
+   }
+   .left{
+       margin-left: 30px;
+   }
+   
+   /*-------------------------Recommendation---------------------------*/
+   .recommendation_section{
+       border-radius: 2px;  
+       margin-bottom: 40px;
+
+   }
+   
+   .avatar{
+       width: 80px;
+       height: 80px;
+       margin-left: 20px;
+       margin-top: 10px;
+   }
+   
+   .avatar_rec{
+       width: 80px;
+       height: 80px;
+       float: left;
+   }
+   
+   #username{
+       display: inline-block;
+       padding-left: 13px;
+   }
+   
+   .horizontal_line{
+       border: 0;
+       height: 0.5px;
+       background: #C8C6C6;
+   
+   }
+   
+   .mySlides_rec{
+       position: relative;
+       right:40px;
+       width:120%;
+   }
+   .slideRec{
+       max-width:400px;
+   }
+   
+   .location{
+       float: right;
+       margin-right: 20px;
+       text-decoration: none;
+   }
+   
+   .location:hover {
+       color: #D49A89;
+     }
+   
+     .place_type{
+       float:right;
+       margin-top: 8px;
+       margin-right: 9px;
+       color: #557571;
+     }
+     .vistor_mode{ 
+       color: #557571;
+       position: absolute;
+       top: 1270px;
+       left: 977px;
+     }
+   
+   .current_display
+   {
+       display:none
+   }
+   
+   .linkPlace{
+      position: relative;
+       left: 42%; 
+      color: #557571;
+   }
+
+   /*-----------------------Form-------------------------------*/
+   
+   .formWidthRecomendation {
+      position: relative;
+      width: 780px !important;
+      height: 550px !important; 
+      top: 250px;
+      left: 53.5%;
+      transform: translate(-49%, -49%);
+      display: none;
+      border-radius: 2px;  
+   
+   }
+
+   .FormiconStyle { /* the icon in the form style */
+    width:50px !important;
+  }
+
+   

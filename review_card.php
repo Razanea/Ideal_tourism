@@ -2,8 +2,8 @@
 //require_once 'conncetion.php';
 
  $servername = "localhost";
- $username = "myuser";
- $password = "myuser12345";
+ $username = "root";
+ $password = "";
  $dbname = "customers";
  //create connection
  $conn = mysqli_connect($servername, $username, $password ,  $dbname);

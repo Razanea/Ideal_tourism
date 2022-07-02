@@ -27,7 +27,7 @@ session_start();
 //function to store the input data to the database 
  function button2() 
 {
-  include_once ("conncetion.php");
+  include_once ("connection.php");
 
  //if the connection is work    
  // Taking the values from the form data(input)
@@ -36,7 +36,7 @@ session_start();
  $customer_msg =  $_REQUEST['msg'];
           
  // Performing insert query execution
- // Our table name is review_card2
+ // the table name is review_card2
 
  $sql = "INSERT INTO review_card2 (cutomer_name, customer_msg)  VALUES ('$customer_name', '$customer_msg')";
 
@@ -58,28 +58,7 @@ session_start();
 ?>
 
 <!----------------------Menue---------------------------->
-
-<div class="nav-color">
- <div class="w3-bar"> 
-  <div class="w3-bar-item w3-left logo">
-   <h3>Ideal Tourism in <span> Riyadh </span></h3> 
-  </div>
-  <div class="link-1"><a href="admin.php" class="w3-bar-item w3-button w3-right"><i class="fa fa-user w3-right" ></i></a>
-  </div>
-  <?php
-   if(isset($_SESSION['userid']))
-   {
-  ?> 
-   <div class="link-1"><a href="log_out.php" class="w3-bar-item w3-button w3-right">Log out</a></div>
-  <?php 
-    }
-  ?>
-   <div class="link-2"><a href="home.php" class="w3-bar-item w3-button Mcenter" > Home </a></div>
-   <div class="link-3"><a href="explore.php" class="w3-bar-item w3-button w3-left">Explore Riyadh</a></div>
-   <div class="link-4"><a href="aboutriyadh.php" class="w3-bar-item w3-button w3-left">About Riyadh</a></div>
-   <div class="link-5"><a href="recommendations.php" class="w3-bar-item w3-button w3-left">Recommendations</a></div>
- </div>
-</div>
+<?php include("menue.php"); ?>
 
 <!----------------------SLIDESHOW---------------------------->
 <br>
@@ -91,35 +70,34 @@ session_start();
 <div class="slideshow-container">
 
   <!-- First Image-->
-<div class="fade">
-  <img class = "mySlides" src="Photos/Event_1.png">
+  <div class="fade">
+   <img class = "mySlides" src="Photos/Event_1.png">
+  </div>
+
+  <!-- Second Image-->
+  <div class="fade">
+   <img class = "mySlides" src="Photos/Event_2.png">
+  </div>
+
+  <!-- Third Image-->
+  <div class="fade">
+   <img class = "mySlides" src="Photos/Event_3.png">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+   <span class="dot" onclick="currentSlide(1)"></span>
+   <span class="dot" onclick="currentSlide(2)"></span>
+   <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
 </div>
-
-<!-- Second Image-->
-<div class="fade">
-  <img class = "mySlides" src="Photos/Event_2.png">
-</div>
-
-<!-- Third Image-->
-<div class="fade">
-  <img class = "mySlides" src="Photos/Event_3.png">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-</div>
-
 <script src = "slideshow.js"></script>
 <br><br><hr>
-<!----------------------Offer---------------------------->
+<!----------------------What does Riyadh have to offer section---------------------------->
 <br><br>
 <div id="Explore">
  <div class="w3-container w3-left"> 
@@ -155,7 +133,7 @@ session_start();
  </div><br><br>
 </div>
 <hr>
-<!----------------------Visiting Riyadh---------------------------->
+<!----------------------Visiting Riyadh section ---------------------------->
 <div class="w3-container"><br><br>
  <h1 class="title w3-opacity w3-margin">DISCOVER THE BEST OF RIYADH</h1>
  <p class="subTitle"> DISCOVER THE BEST OF RIYADH IN A LIMITED TIMEFRAME </p> 
@@ -213,6 +191,7 @@ session_start();
   </div>
   <input class="w3-button homebtn w3-block w3-section FormBtnColor w3-ripple w3-padding w3-text-white w3-padding-large" type="submit" name="button2" value="send"/> 
  </form>
+
 </div>
 <br><br><br><br><br><br>
 <!--------------------------Footer------------------------------------>
@@ -224,13 +203,13 @@ session_start();
         <p class="footer-links">
           <a href="#">Home</a>
           ·
-          <a href="#">Explore Riyadh</a>
-          ·
           <a href="#">About Riyadh</a>
           ·
-          <a href="#">Contact</a>
+          <a href="#">Explore Riyadh</a>
+          ·
+          <a href="#">Recommendations</a>
         </p> 
-        <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2021</p>
+        <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2022</p>
       </div>
       <div class="footer-center">
          <div>

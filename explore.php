@@ -19,30 +19,41 @@ session_start();
 
 //When the button (fav1) is clicked 
  if(array_key_exists('fav1', $_POST)) {
+        if(isset($_SESSION['userid'])) {
            fav1();
-        }
-        elseif (array_key_exists('fav1_2', $_POST)) {
+        }       
+      }
+        elseif (array_key_exists('fav1_2', $_POST))  {
+          if(isset($_SESSION['userid'])) {
           fav1_2();
         }
+      }
         elseif (array_key_exists('fav2_1', $_POST)){
+          if(isset($_SESSION['userid'])) {
           fav2_1();
         }
+      }
         elseif (array_key_exists('fav2_2', $_POST)){
+          if(isset($_SESSION['userid'])) {
           fav2_2();
         }
+      }
          elseif (array_key_exists('fav3_1', $_POST)){
+          if(isset($_SESSION['userid'])) {
           fav3_1();
         }
+      }
         elseif (array_key_exists('fav3_2', $_POST)){
+          if(isset($_SESSION['userid'])) {
           fav3_2();
-        }
-
+        } 
+      }
 
 //function to store the input data to the database 
   function fav1() 
 {
  $id = $_SESSION['userid'];
- include_once ("conncetion.php");
+ include_once ("connection.php");
           
  // Performing insert query execution
  // Our table name is fav_place
@@ -63,7 +74,7 @@ mysqli_close($conn);
  function fav1_2() 
 {
  $id = $_SESSION['userid'];
- include_once ("conncetion.php");
+ include_once ("connection.php");
           
  // Performing insert query execution
  // Our table name is fav_place
@@ -83,7 +94,7 @@ mysqli_close($conn);
  function fav2_1() 
 {
 
- include_once ("conncetion.php");
+ include_once ("connection.php");
           
  // Performing insert query execution
  // Our table name is fav_place
@@ -104,7 +115,7 @@ mysqli_close($conn);
  function fav2_2() 
 {
  $id = $_SESSION['userid'];
- include_once ("conncetion.php");
+ include_once ("connection.php");
           
  // Performing insert query execution
  // Our table name is fav_place
@@ -124,7 +135,7 @@ mysqli_close($conn);
  function fav3_1() 
 {
  $id = $_SESSION['userid'];
- include_once ("conncetion.php");
+ include_once ("connection.php");
           
  // Performing insert query execution
  // here our table name is fav_place
@@ -144,7 +155,7 @@ mysqli_close($conn);
  function fav3_2() 
 {
  $id = $_SESSION['userid'];
- include_once ("conncetion.php");
+ include_once ("connection.php");
           
  // Performing insert query execution
  // here our table name is fav_place
@@ -165,26 +176,7 @@ mysqli_close($conn);
 
 <!----------------------Menue---------------------------->
 
-<div class="nav-color">
- <div class="w3-bar"> 
-  <div class="w3-bar-item w3-left logo">
-   <h3>Ideal Tourism in <span> Riyadh </span></h3> 
-  </div>
-  <div class="link-1"><a href="admin.php" class="w3-bar-item w3-button w3-right"><i class="fa fa-user w3-right" ></i></a></div>
-   <?php
-    if(isset($_SESSION['userid']))
-    {
-    ?> 
-   <div class="link-1"><a href="log_out.php" class="w3-bar-item w3-button w3-right">Log out</a></div>
-   <?php 
-    }
-   ?>
-   <div class="link-2"><a href="home.php" class="w3-bar-item w3-button Mcenter" > Home </a></div>
-   <div class="link-3"><a href="explore.php" class="w3-bar-item w3-button w3-left">Explore Riyadh</a></div>
-   <div class="link-4"><a href="aboutriyadh.php" class="w3-bar-item w3-button w3-left">About Riyadh</a></div>
-   <div class="link-5"><a href="recommendations.php" class="w3-bar-item w3-button w3-left">Recommendations</a></div>
-  </div>
-</div>
+<?php include("menue.php"); ?>
 
 <!--------------------- Header --------------------------->
 <header class="w3-display-container w3-content w3-center w3-margin-top ExploreHeader">
@@ -331,16 +323,16 @@ mysqli_close($conn);
 
         <h3>Ideal Tourism in <span> Riyadh </span></h3>
         <p class="footer-links">
-          <a href="#">Home</a>
-          ·
-          <a href="#">Explore Riyadh</a>
+         <a href="#">Home</a>
           ·
           <a href="#">About Riyadh</a>
           ·
-          <a href="#">Contact</a>
+          <a href="#">Explore Riyadh</a>
+          ·
+          <a href="#">Recommendations</a>
         </p>
  
-        <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2021</p>
+        <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2022</p>
       </div>
      
       <div class="footer-center">

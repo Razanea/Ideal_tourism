@@ -26,7 +26,7 @@ $session_id = session_id();
 
 <?php
 
-include("conncetion.php");
+include("connection.php");
 
 if(isset($_POST['but_upload'])){
  
@@ -38,7 +38,7 @@ if(isset($_POST['but_upload'])){
   $place_discription =  $_REQUEST['msg'];
 
 
-  $target_dir = "D:/xampp/htdocs/CS381 PROJECT/Uploads/";
+  $target_dir = "D:/xampp/htdocs/CS381_project/Uploads/";
   $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
   // Select file type
@@ -106,7 +106,7 @@ if(isset($_POST['but_upload'])){
          <p class="w3-center">
          <img class = "avatar" src = "Photos/avatar1.png"></p>
          <?php   
-             include("conncetion.php");
+             include("connection.php");
              $query = "SELECT * FROM users where id = $id";
              $result = mysqli_query($conn , $query);
                if(!$result || mysqli_num_rows($result) >  0)
@@ -142,7 +142,7 @@ if(isset($_POST['but_upload'])){
           <div class="w3-container w3-padding">
             <?php
              $id = $_SESSION['userid'];
-             include_once ("conncetion.php");
+             include_once ("connection.php");
              $query = "SELECT * FROM fav_place where id = '$id' ";
              $result = mysqli_query($conn , $query);
              ?>
@@ -288,16 +288,16 @@ if(isset($_POST['but_upload'])){
   <section id="footer">
     <footer class="footer-distributed">
       <div class="footer-left"> 
-
+        
         <h3>Ideal Tourism in <span> Riyadh </span></h3>
         <p class="footer-links">
-          <a href="#">Home</a>
-          ·
-          <a href="#">Explore Riyadh</a>
+         <a href="#">Home</a>
           ·
           <a href="#">About Riyadh</a>
           ·
-          <a href="#">Contact</a>
+          <a href="#">Explore Riyadh</a>
+          ·
+          <a href="#">Recommendations</a>
         </p>
  
         <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2021</p>

@@ -26,7 +26,7 @@ session_start();
   function button2() 
 {
   
-include_once ("conncetion.php");
+include_once ("connection.php");
  //if the connection is work    
  // Taking all 5 values from the form data(input)
  $Uname =  $_REQUEST['Uname'];
@@ -51,26 +51,8 @@ if(mysqli_query($conn, $sql)){
 ?>
 <!----------------------Menue---------------------------->
 
-<div class="nav-color">
- <div class="w3-bar"> 
-  <div class="w3-bar-item w3-left logo">
-   <h3>Ideal Tourism in <span> Riyadh </span></h3> 
-  </div>
-   <div class="link-1"><a href="admin.php" class="w3-bar-item w3-button w3-right"><i class="fa fa-user w3-right" ></i></a></div>
-   <?php
-    if(isset($_SESSION['userid']))
-    {
-    ?> 
-   <div class="link-1"><a href="log_out.php" class="w3-bar-item w3-button w3-right">Log out</a></div>
-   <?php 
-    }
-   ?>
-   <div class="link-2"><a href="home.php" class="w3-bar-item w3-button Mcenter" > Home </a></div>
-   <div class="link-3"><a href="explore.php" class="w3-bar-item w3-button w3-left">Explore Riyadh</a></div>
-   <div class="link-4"><a href="aboutriyadh.php" class="w3-bar-item w3-button w3-left">About Riyadh</a></div>
-   <div class="link-5"><a href="recommendations.php" class="w3-bar-item w3-button w3-left">Recommendations</a></div>
-  </div>
-</div>
+<?php include("menue.php"); ?>
+
 <!-----------------------------Edit form---------------------------------------->
 <center>
 <div class = "signin_form">
@@ -110,16 +92,16 @@ if(mysqli_query($conn, $sql)){
 
         <h3>Ideal Tourism in <span> Riyadh </span></h3>
         <p class="footer-links">
-          <a href="#">Home</a>
-          ·
-          <a href="#">Explore Riyadh</a>
+         <a href="#">Home</a>
           ·
           <a href="#">About Riyadh</a>
           ·
-          <a href="#">Contact</a>
+          <a href="#">Explore Riyadh</a>
+          ·
+          <a href="#">Recommendations</a>
         </p>
  
-        <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2021</p>
+        <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2022</p>
       </div>
      
       <div class="footer-center">

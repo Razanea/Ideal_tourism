@@ -16,27 +16,7 @@ session_start();
 </head>
 <body>
 <!----------------------Menue---------------------------->
-
-<div class="nav-color">
- <div class="w3-bar"> 
-  <div class="w3-bar-item w3-left logo">
-   <h3>Ideal Tourism in <span> Riyadh </span></h3> 
-  </div>
-   <div class="link-1"><a href="admin.php" class="w3-bar-item w3-button w3-right"><i class="fa fa-user w3-right" ></i></a></div>
-   <?php
-    if(isset($_SESSION['userid']))
-    {
-    ?> 
-   <div class="link-1"><a href="log_out.php" class="w3-bar-item w3-button w3-right">Log out</a></div>
-   <?php 
-    }
-   ?>
-   <div class="link-2"><a href="home.php" class="w3-bar-item w3-button Mcenter" > Home </a></div>
-   <div class="link-3"><a href="explore.php" class="w3-bar-item w3-button w3-left">Explore Riyadh</a></div>
-   <div class="link-4"><a href="aboutriyadh.php" class="w3-bar-item w3-button w3-left">About Riyadh</a></div>
-   <div class="link-5"><a href="recommendations.php" class="w3-bar-item w3-button w3-left">Recommendations</a></div>
-  </div>
-</div>
+<?php include("menue.php"); ?>
 <!--------------------------About Riyadh Contents------------------------------------>    
     <div class = "main_Contents"><br><br>
       <h1>Riyadh City</h1>
@@ -165,11 +145,11 @@ session_start();
   <script src = "aboutriyadhaccordion.js"></script>
  </div>
 <hr>
-<!------------------------IFrame--------------------------------------->
+<!------------------------Iframe--------------------------------------->
 <div class="w3-panel r_contents">
  <div class="w3-container">
   <h1><b>Riyadh Season!</b></h1>  
-   <p class="subTitle">You can find more about it by visiting the Riyadh season Official Website. <a href="https://riyadhseason.sa/"> click her to know more </a> </p>
+   <p class="subTitle">You can find more about it by visiting the Riyadh season Official Website. <a href="https://riyadhseason.sa/"> click her to know more </a> </p> 
    <iframe src="https://riyadhseason.sa/" class="iframe1" name="iframe_a" ></iframe> 
  </div><br> 
 </div>
@@ -182,11 +162,11 @@ session_start();
         <p class="footer-links">
           <a href="#">Home</a>
           ·
-          <a href="#">Explore Riyadh</a>
-          ·
           <a href="#">About Riyadh</a>
           ·
-          <a href="#">Contact</a>
+          <a href="#">Explore Riyadh</a>
+          ·
+          <a href="#">Recommendations</a>
         </p>
  
         <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2022</p>

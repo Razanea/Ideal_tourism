@@ -25,7 +25,7 @@ $session_id = session_id();
 <body>
 <?php
 
-include("conncetion.php");
+include("connection.php");
 
 if(isset($_POST['but_upload'])){
  
@@ -37,7 +37,7 @@ if(isset($_POST['but_upload'])){
   $place_discription =  $_REQUEST['msg'];
 
 
-  $target_dir = "D:/xampp/htdocs/CS381 PROJECT/Uploads/";
+  $target_dir = "D:/xampp/htdocs/CS381_project/Uploads/";
   $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
   // Select file type
@@ -70,21 +70,9 @@ if(isset($_POST['but_upload'])){
 ?>
 <!----------------------Menue---------------------------->
 
-<div class="nav-color">
- <div class="w3-bar"> 
+<?php include("menue.php"); ?>
 
-  <div class="w3-bar-item w3-left logo">
-     <h3>Ideal Tourism in <span> Riyadh </span></h3> 
-  </div>
-  <div class="link-2"><a href="admin.php" class="w3-bar-item w3-button w3-right"><i class="fa fa-user w3-right"    aria-hidden="true"></i>
-  </div>
-  <div class="link-1"><a href="home.php" class="w3-bar-item w3-button Mcenter" > Home </a></div>
-  <div class="link-3"><a href="explore.php" class="w3-bar-item w3-button w3-left">Explore Riyadh</a></div>
-  <div class="link-4"><a href="aboutriyadh.html" class="w3-bar-item w3-button w3-left">About Riyadh</a></div>
-  <div class="link-5"><a href="recommendations.php" class="w3-bar-item w3-button w3-left">Recommendations</a></div>
-
- </div>
-</div>
+<!-------------------Page contents ---------------------->
 
 <form method="post" class="w3-container w3-card-4 w3-white w3-margin formWidthRecomendation " enctype='multipart/form-data' id="demo">
 
@@ -153,14 +141,14 @@ if(isset($_POST['but_upload'])){
         <p class="footer-links">
           <a href="#">Home</a>
           ·
-          <a href="#">Explore Riyadh</a>
-          ·
           <a href="#">About Riyadh</a>
           ·
-          <a href="#">Contact</a>
+          <a href="#">Explore Riyadh</a>
+          ·
+          <a href="#">Recommendations</a>
         </p>
  
-        <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2021</p>
+        <p class="footer-company-name">Ideal Tourism in Riyadh &copy; 2022</p>
       </div>
      
       <div class="footer-center">
